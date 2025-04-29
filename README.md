@@ -16,4 +16,4 @@ chatbot_experiment/
 ├── index.pkl
 └── README.md
 ```
-and I will make each step seperately.
+and I will fix each step seperately.
