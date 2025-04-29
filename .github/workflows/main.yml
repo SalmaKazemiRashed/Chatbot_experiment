@@ -26,13 +26,13 @@ jobs:
 
       # Step 3: Create Conda environment from requirements.txt
       - name: Create Conda environment from requirements
-        run: conda create --name RAG_chatbot_env --file requirements.txt
+        run: conda env create -f environment.yml
 
       # Step 4: Activate Conda environment
       - name: Activate and Test Conda environment
         shell: bash -l {0}  # Ensure shell has access to Conda
         run: |
-             conda activate RAG_chatbot_env  # Replace with your environment name
+             conda activate rag-chatbot  # Replace with your environment name
              conda info --envs  # Optional to list environments
              python --version  # Example: check Python version
              python index_builder.py
