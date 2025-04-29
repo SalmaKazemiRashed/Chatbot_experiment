@@ -1,12 +1,12 @@
 name: rag-chatbot
 channels:
-  - defaults
   - conda-forge
+  - defaults
 dependencies:
   - python=3.10
   - pip
   - pip:
       - flask
       - openai
-      - faiss-cpu
       - sentence-transformers
+      - faiss-cpu
