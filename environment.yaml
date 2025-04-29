@@ -6,7 +6,7 @@ dependencies:
   - python=3.10
   - pip
   - pip:
-      - Flask
+      - flask
       - openai
       - faiss-cpu
       - sentence-transformers
