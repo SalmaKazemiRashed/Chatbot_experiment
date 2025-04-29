@@ -1,0 +1,39 @@
+name: Test RAG chatbot
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository containing the requirements.txt file
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Miniconda
+      - name: Set up Miniconda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true  # Optional, to ensure conda is up to date
+          python-version: 3.10       # Specify your desired Python version
+
+      # Step 3: Create Conda environment from requirements.txt
+      - name: Create Conda environment from requirements
+        run: conda create --name RAG_chatbot_env --file requirements.txt
+
+      # Step 4: Activate Conda environment
+      - name: Activate and Test Conda environment
+        shell: bash -l {0}  # Ensure shell has access to Conda
+        run: |
+             conda activate RAG_chatbot_env  # Replace with your environment name
+             conda info --envs  # Optional to list environments
+             python --version  # Example: check Python version
+             python index_builder.py
+      
