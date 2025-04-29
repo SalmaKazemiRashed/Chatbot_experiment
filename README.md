@@ -1,7 +1,8 @@
 # Chatbot_experiment
 This is a simple chatbot project utilizing LLMs and Retrieval-Augmented Generation (RAG)
 
-First, I made files structure as follows:
+First, I made project structure as follows:
+```plaintext
 chatbot_experiment/
 ├── app/
 │   ├── main.py
@@ -14,5 +15,5 @@ chatbot_experiment/
 ├── index_builder.py
 ├── index.pkl
 └── README.md
-
+```
 and I will make each step seperately.
