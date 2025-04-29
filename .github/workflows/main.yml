@@ -25,8 +25,8 @@ jobs:
           python-version: 3.10       # Specify your desired Python version
 
       # Step 3: Create Conda environment from requirements.txt
-      - name: Create Conda environment from requirements
-        run: conda env create -f environment.yml
+      - name: Create Conda environment from environment.yaml
+        run: conda env create -f environment.yaml
 
       # Step 4: Activate Conda environment
       - name: Activate and Test Conda environment
