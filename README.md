@@ -1,19 +1,26 @@
 # Chatbot_experiment
-This is a simple chatbot project utilizing LLMs and Retrieval-Augmented Generation (RAG)
+
+* This is a simple chatbot project Using FLASK backend ready for depolyment (Dockerized)
+
+* Integrated with Neo4j for Graph RAG
+
+* Use of LLM API
+
 
 First, I made project structure as follows:
 ```plaintext
 chatbot_experiment/
 ├── app/
-│   ├── main.py
-│   ├── rag.py
-│   └── requirements.txt
+|   ├── __init__.py
+|   ├── config.py
+│   ├── neo4j_client.py
+│   ├── llm_client.py
+|   ├── routes.py
+│   └── utils.py
+├── run.py   
+├── requirements.txt
 ├── Dockerfile
-├── k8s/
-│   ├── deployment.yaml
-│   └── service.yaml
-├── index_builder.py
-├── index.pkl
+├── .dockerignore
 └── README.md
 ```
-and I will fix each step seperately.
+
