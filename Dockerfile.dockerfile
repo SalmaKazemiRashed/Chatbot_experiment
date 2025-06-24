@@ -1,6 +1,21 @@
-FROM python:3.10
+FROM python:3.11-slim
+
+
 WORKDIR /app
-COPY app /app
-COPY index.pkl /app/index.pkl
-RUN pip install -r requirements.txt
-CMD ["flask", "--app", "main", "run", "--host=0.0.0.0", "--port=8080"]
+
+COPY . /app
+
+RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+EXPOSE 5000
+
+CMD ["flask", "--app", "main", "run", "--host=0.0.0.0", "--port=8080"]  
+
+#CMD ["gunicorn", "-b", "0.0.0.0:5000", "run:app"]
+
+
+
+
+

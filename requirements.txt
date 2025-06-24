@@ -1,5 +1,8 @@
 flask
 neo4j
-openai
+langchain
+transformers
+torch
 python-dotenv
 gunicorn
+openai
