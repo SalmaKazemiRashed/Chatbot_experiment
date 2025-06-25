@@ -1,5 +1,6 @@
 from langchain import PromptTemplate, LLMChain
-from langchain.llms import HuggingFacePipeline
+from langchain_community.llms import HuggingFacePipeline
+#from langchain.llms import HuggingFacePipeline
 from transformers import pipeline
 from .config import Config
 

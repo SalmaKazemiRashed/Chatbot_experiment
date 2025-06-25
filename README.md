@@ -17,7 +17,7 @@ chatbot_experiment/
 │   ├── llm_client.py
 |   ├── routes.py
 │   └── utils.py
-├── run.py   
+├── main.py   
 ├── requirements.txt
 ├── Dockerfile
 ├── .dockerignore
