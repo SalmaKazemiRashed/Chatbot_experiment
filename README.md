@@ -1,6 +1,5 @@
 # Chatbot_experiment
 
-* This is a simple chatbot project Using 
 
 ## LLM chatbot + RAG
 
@@ -12,17 +11,17 @@ faiss/Chroma
 
 Ollama (llama3, nomic-embed-text)
 
-* Integrated with StreamLit UI
+Integrated with StreamLit UI
 
 
-![](./RAG_chatbot/static/LLM_chatbot.png)
+!()[./RAG_chatbot/static/LLM_chatbot.png]
 
-
+```plaintext
 ├── RAG_chatbot/
 |   ├── LLM_chatbot.py
 |   ├── app.py
 │   ├── LLM_langgraph_app.py
-
+```
 
 The steps were 
 A. install packages
@@ -45,8 +44,9 @@ G. RAG chain
 
 H. Invoke
 
-![](./RAG_chatbot/static/LLM_chatbot_langgraph.png)
 
+
+!()[./RAG_chatbot/static/LLM_chatbot_langgraph.png]
 
 ## LLM chatbot + RAG + langraph
 
@@ -60,9 +60,9 @@ Node C: Retrieve relevant context
 
 Node D: Generate answer
 
-* Build the LangGraph
+Build the LangGraph
 
-*  Streamlit UI
+Streamlit UI
 
 
 
