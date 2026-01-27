@@ -14,7 +14,7 @@ Ollama (llama3, nomic-embed-text)
 Integrated with StreamLit UI
 
 
-![](./RAG_chatbot/static/LLM_chatbot.png)
+![RAG](./RAG_chatbot/static/LLM_chatbot.png)
 
 ```plaintext
 ├── RAG_chatbot/
@@ -46,7 +46,7 @@ H. Invoke
 
 
 
-![](./RAG_chatbot/static/LLM_chatbot_langgraph.png)
+![langGraph](./RAG_chatbot/static/LLM_chatbot_langgraph.png)
 
 ## LLM chatbot + RAG + langraph
 
@@ -67,8 +67,10 @@ Streamlit UI
 
 
 
+## Future steps
 
-* This is a simple chatbot project Using FLASK backend ready for depolyment (Dockerized)
+
+* Using FLASK backend ready for depolyment (Dockerized)
 
 * Integrated with Neo4j for Graph RAG
 
