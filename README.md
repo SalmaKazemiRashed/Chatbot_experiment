@@ -14,7 +14,7 @@ Ollama (llama3, nomic-embed-text)
 Integrated with StreamLit UI
 
 
-!()[./RAG_chatbot/static/LLM_chatbot.png]
+![](./RAG_chatbot/static/LLM_chatbot.png)
 
 ```plaintext
 ├── RAG_chatbot/
@@ -46,7 +46,7 @@ H. Invoke
 
 
 
-!()[./RAG_chatbot/static/LLM_chatbot_langgraph.png]
+![](./RAG_chatbot/static/LLM_chatbot_langgraph.png)
 
 ## LLM chatbot + RAG + langraph
 
